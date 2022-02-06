@@ -1,0 +1,89 @@
+#episodes {
+    display: flex;
+    width: auto;
+    height: auto;
+    transform: skewY(-2deg);
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+
+    .chapters-container {
+        transform: skewY(2deg);
+        background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        width: 100%;
+        margin-top: 75px;
+        margin-bottom: 180px;
+        height: 40%;
+        display:grid;
+        @media (max-width: 599px) {
+            display: block;
+        }
+        grid-template-columns: auto auto;
+        grid-template-rows: 8% auto auto;
+        grid-row-gap: 20px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: 599px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        .episodes-title {
+            grid-column-start: 1;
+            grid-column-end:3;
+            /*border: 1px solid yellow;*/
+            justify-content: flex-start;
+            align-items: flex-end;
+          
+            h2 {
+            font-family: $ff-title;
+            font-weight: lighter;
+            color: white;
+            position: absolute;
+                @media (max-width: 599px) {
+                    font-size: 32px;
+                    padding-right: 5rem;
+                    padding-left: 1rem;
+                    margin-top: -2rem;
+                }
+                @media (min-width: 600px) and (max-width: 899px) {
+                    font-size: 44px;
+                    padding-top: 1rem;
+                    padding-right: 4rem;
+                    padding-left: 1.5rem;
+                }
+                @media (min-width: 900px) and (max-width: 2560px) {
+                    font-size: 50px;
+                    padding-top: 2rem;
+                    padding-right: 4rem;
+                    padding-left: 7rem;
+                }
+            }
+        }
+
+        iframe {
+            width: 80%; 
+            height:232px;   
+            border: 0px;                      
+            background-color: transparent;
+            @media (max-width: 599px) {
+                width:95%;
+            }
+        }
+
+       /* .chapter1 {
+            border: 1px solid green;
+        }
+        .chapter2 {
+            border: 1px solid red;
+        }
+        .chapter3 {
+            border: 1px solid violet;
+           
+        }
+        .chapter4 {
+            border: 1px solid orange;
+        }*/
+    }
+}

@@ -1,0 +1,99 @@
+.header-text {
+    background-color:white;
+    height: 303px;
+    color: $fc;
+    font-weight: lighter;
+
+    h1 {
+        font-family: $ff-title;
+        font-weight: lighter;
+        span.world {
+            text-decoration-line: line-through;
+        }
+
+        span.dot {
+            @media (min-width: 900px) and (max-width: 2560px) {
+                color: blue;
+            }
+        }
+
+        @media (max-width: 599px) {
+            font-size: 30px;
+            padding-top: 1rem;
+            padding-right: 5rem;
+            padding-left: 1rem;
+        }
+        @media (min-width: 600px) and (max-width: 899px) {
+            font-size: 44px;
+            padding-top: 1rem;
+            padding-right: 4rem;
+            padding-left: 1.5rem;
+        }
+        @media (min-width: 900px) and (max-width: 2560px) {
+            font-size: 62px;
+            padding-top: 2rem;
+            padding-right: 4rem;
+            padding-left: 7rem;
+        }   
+    }
+
+    h3 {
+        font-family: $ff-text;
+        text-align: justify;
+        
+        @media (max-width: 599px) {
+            font-size: 15px;
+            padding-top: 1.5rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        @media (min-width: 600px) and (max-width: 899px) {
+            font-size: 20px;
+            padding-top: 1.5rem;
+            padding-right: 4rem;
+            padding-left: 1.5rem;
+        }
+        @media (min-width: 900px) and (max-width: 2560px) {
+            font-size: 17px;
+            padding-top: 1rem;
+            padding-right: 20rem;
+            padding-left: 7rem;
+        }
+    }
+
+    button {
+        background-color: #00F3BB;
+        font-family: 'IBM Plex Mono', medium;
+        line-height: 22px;
+        color: #060A24;
+        text-align: center;
+        letter-spacing: -1px;
+        &:hover {
+            background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            color:#FFFFFF;
+            cursor: pointer;
+        }
+
+        @media (max-width: 599px) {
+            height: 48px;
+            width: 288px;
+            font-size: 18px;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+        @media (min-width: 600px) and (max-width: 899px) {
+            height: 48px;
+            width: 288px;
+            font-size: 20px;
+            margin-top: 2.3rem;
+            margin-left: 1.5rem;
+        }
+        @media (min-width: 900px) and (max-width: 2560px) {
+            height: 48px;
+            width: 200px;
+            font-size: 20px;
+            margin-top: 2.5rem;
+            margin-left: 7rem;
+        }
+    }
+}

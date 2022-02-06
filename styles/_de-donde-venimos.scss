@@ -1,0 +1,100 @@
+#from {
+    @media (max-width: 599px) {
+        display: block;
+    }
+    @media (min-width: 600px) and (max-width: 899px) {
+        display: block;
+    }
+    @media (min-width: 900px) and (max-width: 2560px) {
+        display: flex;
+        margin-top: 40px;
+        height: 600px;
+    }
+
+    div {
+        height: auto;
+        display: flex;
+        
+        @media (max-width: 599px) {
+            width: 100%;
+        }
+        @media (min-width: 600px) and (max-width: 899px) {
+            width: 100%;
+        }
+        @media (min-width: 900px) and (max-width: 2560px) {
+            width: 50%;
+        }
+    }
+    .from-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -65px;
+        img {
+            @media (max-width: 599px) {
+                width: 300px;
+                height: 500px;
+                transform: translate(0, -100px);
+            }
+            @media (min-width: 600px) and (max-width: 899px) {
+                width: 460px;
+                height: 660px;
+                transform: translate(0, -80px);
+            }
+            @media (min-width: 900px) and (max-width: 2560px) {
+                width: 460px;
+                height: 660px;
+                transform: translate(0, -80px);
+            }
+        }
+    }
+    
+    .from-text {
+        display: block;
+        justify-content: center;
+        align-items:center;
+    
+        h1 {
+            font-family: $ff-title;
+            font-weight: lighter;
+            @media (max-width: 599px) {
+                font-size: 2rem; 
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+            @media (min-width: 600px) and (max-width: 899px) {
+                font-size: 2rem;
+                padding-right: 4rem;
+                padding-left: 1.5rem;
+            }
+            @media (min-width: 900px) and (max-width: 2560px) {
+                font-size: 2rem;
+            }
+        }
+        p {
+            font-family: $ff-text;
+            
+         
+            @media (max-width: 599px) {
+                font-size: 1rem;
+                padding-right: 1rem; 
+                padding-left: 1rem;
+                padding-top: 1rem;
+            }
+            @media (min-width: 600px) and (max-width: 899px) {
+                font-size: 1rem;
+                padding-right: 2rem;
+                padding-left: 1.5rem;
+                padding-top: 0.5rem;
+                text-align: justify;
+            }
+            @media (min-width: 900px) and (max-width: 2560px) {
+                font-size: 1rem;
+                margin-top: 1.5rem;
+                margin-right: 4.5rem;
+                text-align: justify;  
+            }
+        }
+    }
+
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <!--Etiquetas META-->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+        <meta name="author" content="Simón López Calderón">
+        <!--Titulo de la pagina (lo que aparece en la pestaña)-->
+        <title>Podcast Channel</title>
+        <!-- Agregar fuente IBM PLEX SANS y MONO usada para los titulos-->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono%7CIBM+Plex+Sans%7CIBM+Plex+Serif&display=swap"
+        rel="stylesheet">
+        <!-- Enlace a CSS-->
+        <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+        <!-- Icono de la pestaña de la pagina web-->
+        <link rel="icon" href="Images/logo.svg">  
+    </head>
+
+    <body>
+        <!--Menu tipo hamburguesa-->
+        <header>
+            <div class="logo-container">     
+                <a id="logo" class="logo" href="#logo"><img src="Images/logo.svg" alt="logo"></a>      
+            </div>
+
+            <input type="checkbox" id="button-menu">
+            <label for="button-menu" class="bars-icon"><i class="fas fa-bars"></i></label>
+            <label for="button-menu" class="x-icon"><i class="fas fa-times"></i></label> 
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="#episodes">Episodios</a></li>
+                    <li><a href="#from">Nosotros</a></li>
+                    <li><a href="#guests">Entrevistas</a></li>
+                    <li><a href="#topics">Tópicos</a></li>                        
+                </ul>
+            </nav> 
+        </header>
+
+        <!--Cabecera del canal de podcast-->
+        <section class="header-text">                
+            <h1>Hello <span class="world">world</span> blue pale dot<span class="dot">.</span></h1>
+            <h3>El portal de podcasts que explora el mundo de la programación y la tecnología.
+            Nuevos episodios,todos los jueves cada 15 días.</h3>
+            <form style="display: inline" action="#from" method="get">
+                <button>Conocé mas</button>
+            </form>
+        </section>  
+
+        <!--Episodios-->
+        <section id="episodes">
+            <div class="chapters-container">
+                <div class="episodes-title">
+                    <h2>Episodios</h2>
+                </div>
+                <div class="chapter1">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"></iframe>
+                </div>
+                <div class="chapter2">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
+                </div>
+                <div class="chapter3">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></iframe> 
+                </div>
+                <div class="chapter4">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></iframe>    
+                </div>
+            </div>
+        </section>
+
+        <!--De dónde venimos-->
+        <section id="from">
+            <div class="from-img">
+                <img src="Images/phone.png" alt="phone"> 
+            </div>
+            <div class="from-text">
+                <h1>De dónde venimos</h1>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position
+                in the universe, are challenged by this point of pale light <br/><br/>
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
+                there is no hint that help will come from elsewhere to save us from ourselves.
+                </p>
+            </div>
+        </section>
+
+        <!--Invitadas/os Estelares-->
+        <section id="guests">
+            <div class="guests-title">
+                <h1>Invitadas/os estelares</h1>
+            </div> 
+
+            <div class="guests-container">
+                <div>
+                    <img src="Images/grace-hopper.png" alt="grace-hopper">
+                </div>
+                <div>
+                    <img src="Images/Katie-Bouman.png" alt="Katie-Bouman">
+                </div>
+                <div>
+                    <img src="Images/Margaret_Hamilton.png" alt="Margaret_Hamilton">
+                </div>
+                <div>
+                    <img src="Images/computer1950s.png" alt="Computer-in-50s">
+                </div>
+                <div>
+                    <img src="Images/computer-operators.png" alt="Computer-operators">
+                </div>
+                <div>
+                    <img src="Images/susan-kare.png" alt="susan-kare">
+                </div>
+            </div>
+        </section>
+
+        <!--Algunos de nuestros temas-->
+        <section id="topics">
+            <div class="topics-title">
+                <h1>Algunos de nuestros temas</h1>
+            </div>
+            
+            <div class="topics-icons">
+                <div class="icon1">
+                    <img src="Images/icon1.svg" alt="Trabajo-remoto">
+                    <h3>Trabajo remoto</h3>
+                </div>
+                <div class="icon2">
+                    <img src="Images/icon2.svg" alt="Repensando-la-programacion">
+                    <h3>Repensando la progrmación</h3>
+                </div>
+                <div class="icon3">
+                    <img src="Images/icon3.svg" alt="Bases del código">
+                    <h3>Bases del código</h3>
+                </div>
+                <div class="icon4">
+                    <img src="Images/icon4.svg" alt="Seguridad-informatica">
+                    <h3>Seguridad informática</h3>  
+                </div>
+            </div>
+        </section>
+
+        <!--¿Queres las ultimas novedades?-->
+        <section class="news">
+            <div class="skew">
+                <div class="news-container">
+                    <div class="news-text">
+                        <h1>¿Querés las ultimas novedades?</h1>
+                    </div>
+                    <div class="news-button">
+                        <form style="display: inline" action="#episodes" method="get">
+                            <button>Escuchá los episodios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Pie de pagina con logos de redes sociales-->|
+        <footer>
+            <div class="footer-text">
+               <p> © 2020— Hello blue pale dot </p>
+            </div>
+
+            <div class="footer-icons">
+                <a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a>         
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>        
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>      
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>      
+                <a href="https://www.telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>      
+            </div>
+        </footer>
+     <!--libreia Font Awesome -->
+     <script src="https://kit.fontawesome.com/f70e2be48a.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+#guests {
+    display: block;
+    
+    .guests-title {
+        height: auto;
+        margin-bottom: -10px;
+        h1 {
+            font-family: $ff-title;
+            font-weight: lighter;
+            color: #060A24;
+            padding-bottom: 30px;
+
+            @media (max-width: 599px) {
+                font-size: 34px;
+                padding-top: 1.2rem;
+                padding-right: 5rem;
+                padding-left: 1rem;
+            }
+            @media (min-width: 600px) and (max-width: 899px) {
+                font-size: 40px;
+                padding-top: 1rem;
+                padding-right: 4rem;
+                padding-left: 1.5rem;
+            }
+            @media (min-width: 900px) and (max-width: 2560px) {
+                font-size: 48px;
+                padding-top: 2rem;
+                padding-right: 6rem;
+                padding-left: 14rem;
+            }
+        }
+    }
+
+    .guests-container{
+       
+        display: grid;
+        @media (max-width: 599px) {
+            display: block;
+        }
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        width: 100%;
+        object-fit: fill;
+
+        div {
+            display: flex;
+            object-fit: cover;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
